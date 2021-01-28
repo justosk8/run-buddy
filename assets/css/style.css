@@ -11,11 +11,19 @@ body {
 }
 /* apply styles to <header> */
 header {
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
     padding: 20px 35px;
     background-color: #39a6b2;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 header h1 {
@@ -23,7 +31,7 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -45,6 +53,7 @@ header nav ul {
 }
 
 header nav ul li a {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
@@ -85,21 +94,26 @@ footer div {
       align-items: flex-start;
       background-size: cover;
       background-position: center;
+      background-attachment: fixed;
+      background-position: 80%;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
   }
  
   .hero-form {
-      background-color: #fce138;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      background-color: rgba(252, 225, 56, 0.8);
       padding: 20px;
       display: flex;
       color: #024e76;
       border: solid 3px #024e76;
       justify-content: center;
       flex-wrap: wrap;
+      border-radius: 15px;
       width: 40%;
       margin: 3.5%
+      
       
   }
   .hero-cta {
@@ -111,6 +125,7 @@ footer div {
     line-height: 1.2;
   }
   .hero-cta h2 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-style: italic;
     font-size: 55px;
     color: #fce138;
@@ -130,6 +145,7 @@ footer div {
       color: #024e76;
       width: 100%;
       margin-bottom: 15px;
+      border-radius: 10px;
   }
   .hero-form label {
       margin: 0 5px;
@@ -140,6 +156,7 @@ footer div {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 10px;
   }
   /* HERO STYLES END */
   
@@ -307,7 +324,7 @@ footer div {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
-
+    border-radius: 10px;
   }
   .contact-form button {
     width: 100%;
@@ -317,12 +334,13 @@ footer div {
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
-    
+    border-radius: 10px;
   }
   /* reach out styles end */
  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
  @media screen and (max-width: 980px) {
    header {
+    position: relative;
     padding-bottom: 0;
     justify-content: center; 
    }
